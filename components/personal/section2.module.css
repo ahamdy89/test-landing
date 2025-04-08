@@ -1,0 +1,51 @@
+.logosContainer {
+  width: 100%;
+  margin-inline: auto;
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -110px;
+  }
+}
+
+.logo {
+  width: 110px;
+  position: absolute;
+  left: max(calc(110px * 6), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.logo img {
+  width: 100%;
+}
+.logo1 {
+  animation-delay: calc(30s / 6 * (6 - 1) * -1);
+}
+
+.logo2 {
+  animation-delay: calc(30s / 6 * (6 - 2) * -1);
+}
+
+.logo3 {
+  animation-delay: calc(30s / 6 * (6 - 3) * -1);
+}
+
+.logo4 {
+  animation-delay: calc(30s / 6 * (6 - 4) * -1);
+}
+
+.logo5 {
+  animation-delay: calc(30s / 6 * (6 - 5) * -1);
+}
+
+.logo6 {
+  animation-delay: calc(30s / 6 * (6 - 6) * -1);
+}

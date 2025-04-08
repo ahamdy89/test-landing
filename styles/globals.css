@@ -1,0 +1,101 @@
+@import url("./variables.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    min-width: 0;
+  }
+
+  :root {
+    overflow: overlay;
+  }
+
+  [lang~="ar"] {
+    @apply tracking-tighter;
+  }
+
+  h1 {
+    @apply font-semibold;
+    @apply text-5xl;
+    @apply tracking-tight;
+    @apply leading-tight;
+  }
+
+  h2 {
+    @apply font-semibold;
+    @apply text-3xl;
+    @apply tracking-tighter;
+    @apply leading-8;
+  }
+
+  [lang~="ar"] h2 {
+    @apply font-semibold;
+  }
+
+  h3 {
+    @apply font-medium;
+    @apply text-2xl;
+    @apply tracking-tighter;
+  }
+
+  p {
+    @apply text-base;
+    @apply tracking-tight;
+  }
+  [lang~="ar"] p {
+    @apply tracking-tighter;
+  }
+
+  [type="text"],
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    @apply pt-0.5;
+    @apply pl-1;
+    @apply pr-1;
+    @apply pb-0.5;
+    @apply rounded;
+    @apply solid-shadow-brand-primary;
+  }
+
+  option[value=""] {
+    @apply hidden;
+  }
+
+  :is(
+      [type="text"],
+      [type="email"],
+      [type="url"],
+      [type="password"],
+      [type="number"],
+      [type="date"],
+      [type="datetime-local"],
+      [type="month"],
+      [type="search"],
+      [type="tel"],
+      [type="time"],
+      [type="week"],
+      [multiple],
+      textarea,
+      select,
+      [type="button"],
+      [type="submit"],
+      button
+    ):disabled {
+    @apply bg-gray-200;
+  }
+}

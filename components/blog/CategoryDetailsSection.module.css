@@ -1,0 +1,31 @@
+.bg-teal {
+  @apply bg-brand-primary/10;
+}
+
+.bg-pink {
+  @apply bg-pink/10;
+}
+
+.bg-blue {
+  @apply bg-blue/10;
+}
+
+.bg-bronze {
+  @apply bg-bronze/10;
+}
+
+.fill-teal {
+  @apply fill-brand-primary/10;
+}
+
+.fill-pink {
+  @apply fill-pink/10;
+}
+
+.fill-blue {
+  @apply fill-blue/10;
+}
+
+.fill-bronze {
+  @apply fill-bronze/10;
+}

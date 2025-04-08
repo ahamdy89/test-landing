@@ -1,0 +1,3 @@
+User-Agent: *
+Allow: /
+Sitemap: https://axisapp.com/sitemap.xml

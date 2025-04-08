@@ -1,0 +1,8 @@
+bases:
+  - deployment.yaml
+  - service.yaml
+  - ingress-route.yaml
+  - middleware.yaml
+images:
+  - name: git.axisapp.io:5050/axis/fe-landing-website
+    newTag: latest

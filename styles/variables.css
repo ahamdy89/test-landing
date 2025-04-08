@@ -1,0 +1,17 @@
+:root {
+  --brand-primary-light: 215 255 247;
+  --brand-primary: 11 204 167;
+  --brand-primary-dark: 0 166 141;
+  --brand-primary-darkest: 2 40 33;
+
+  --off-white: 235 240 235;
+  --bronze-light: 255 239 225;
+  --bronze: 217 180 144;
+  --bronze-dark: 179 134 98;
+  --blue-light: 227 248 252;
+  --blue: 7 166 204;
+  --blue-dark: 4 152 189;
+  --pink-light: 255 225 236;
+  --pink: 235 166 188;
+  --pink-dark: 216 132 163;
+}

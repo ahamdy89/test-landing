@@ -1,0 +1,98 @@
+.sectionBackground {
+  background: linear-gradient(90deg, #3fbca0, #16b8d2);
+  background-size: contain;
+}
+.sectionContainer {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-block: 6rem 8rem;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: right;
+}
+
+.logo {
+  width: 262px;
+  height: 395px;
+  background: white;
+  border-radius: 24px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logoCircle {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(90deg, #3fbca0, #16b8d2);
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 40px;
+  color: white;
+}
+
+.servicesContainer {
+  position: relative;
+  width: 15rem;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.animatedServicesContainer {
+  position: relative;
+  height: 4rem;
+  overflow: hidden;
+  display: flex;
+}
+
+.animatedSpan {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  font-size: 40px;
+  color: white;
+  display: block;
+  opacity: 0;
+  font-weight: 600;
+}
+
+.animated1 {
+  animation: fadeInOut 6s infinite;
+  animation-delay: 0s;
+}
+
+.animated2 {
+  animation: fadeInOut 6s infinite;
+  animation-delay: 2s;
+}
+
+.animated3 {
+  animation: fadeInOut 6s infinite;
+  animation-delay: 4s;
+}
+
+@keyframes fadeInOut {
+  0%,
+  5% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  10%,
+  30% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  35%,
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}

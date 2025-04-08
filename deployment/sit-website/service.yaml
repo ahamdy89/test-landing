@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+  labels:
+    axis: fe-landing-website
+  name: fe-landing-website
+  namespace: sit-website
+spec:
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+    - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+    - name: "4000"
+      port: 4000
+      protocol: TCP
+      targetPort: 4000
+  selector:
+    axis: fe-landing-website
+  sessionAffinity: None
+  type: NodePort

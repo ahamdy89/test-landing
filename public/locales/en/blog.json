@@ -1,0 +1,17 @@
+{
+  "PAGE_TITLE": "Blog",
+  "PAGE_DESCRIPTION": "",
+  "VIEW_ALL": "View all",
+  "READ_TIME_zero": "Less than a minute to read",
+  "READ_TIME_one": "1 minute to read",
+  "READ_TIME_two": "2 minutes to read",
+  "READ_TIME_other": "{count} minutes to read",
+  "READ_TIME_WITHOUT_TEXT_zero": "Less than a minute",
+  "READ_TIME_WITHOUT_TEXT_one": "1 minute",
+  "READ_TIME_WITHOUT_TEXT_two": "2 minutes",
+  "READ_TIME_WITHOUT_TEXT_other": "{count} minutes",
+  "WRITER_ARTICLES_LINK_LABEL": "See all articles",
+  "ARTICLES_COUNT_zero": "No articles yet",
+  "ARTICLES_COUNT_one": "1 article",
+  "ARTICLES_COUNT_other": "{count} articles"
+}

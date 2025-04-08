@@ -1,0 +1,53 @@
+.burger-icon {
+  --internal-transition-duration: var(
+    --hamburger-icon-transition-duration,
+    0.3s
+  );
+  cursor: pointer;
+  transform-origin: center;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: var(--internal-transition-duration);
+  transition-timing-function: ease-in-out;
+}
+
+.burger-icon[data-state="open"] {
+  transform: scale(0.8);
+}
+
+.burger-icon path {
+  stroke: var(--icon-color, currentColor);
+  stroke-width: 2px;
+  stroke-dashoffset: 1;
+  stroke-linecap: round;
+  transition-property: stroke-dasharray, stroke-width;
+  transition-duration: var(--internal-transition-duration);
+  transition-timing-function: ease-in-out;
+}
+
+.top-line {
+  stroke-dasharray: 0 1 22 100;
+  transition-delay: 100ms;
+}
+
+.burger-icon[data-state="open"] .top-line {
+  stroke-dasharray: 0 64.5 22 100;
+}
+
+.middle-line {
+  stroke-dasharray: 0 1 22 100;
+  transition-delay: 0ms;
+}
+
+.burger-icon[data-state="open"] .middle-line {
+  stroke-dasharray: 0 58.5 26 100;
+}
+
+.bottom-line {
+  stroke-dasharray: 0 1 22 100;
+  transition-delay: 200ms;
+}
+
+.burger-icon[data-state="open"] .bottom-line {
+  stroke-dasharray: 0 64.5 22 100;
+}
