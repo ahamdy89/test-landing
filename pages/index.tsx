@@ -98,7 +98,7 @@ const Personal: NextPage<Props> = ({ locale }) => {
         setVideoUrl={setVideoUrl}
         locale={locale}
       />
-      <Section4 openGetStartedModal={openGetStartedModal} />
+      <Section4 />
 
       <Section5 />
       <Section6 openGetStartedModal={openGetStartedModal} />
