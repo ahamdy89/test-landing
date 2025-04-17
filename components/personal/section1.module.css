@@ -11,7 +11,7 @@
   color: white;
   display: block;
   opacity: 0;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 .animated1 {
@@ -56,10 +56,12 @@
   mask-image: radial-gradient(circle at 50% 50%, transparent 20px, black 21px);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
+  margin-top: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .maskedCard {
+    margin-top: 0;
     -webkit-mask-image: radial-gradient(
       circle at 50% 50%,
       transparent 30px,
@@ -75,6 +77,8 @@
 
 @media (min-width: 1024px) {
   .maskedCard {
+    margin-top: 0;
+    margin-right: 5rem;
     -webkit-mask-image: radial-gradient(
       circle at 50% 50%,
       transparent 40px,

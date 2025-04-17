@@ -31,7 +31,9 @@ export default function Section10() {
   return (
     <section className="flex w-full flex-col items-center justify-center py-16 ">
       <div className="flex w-full flex-row justify-center gap-8 bg-main-background-gradient py-6 text-white">
-        <div className="invisible">.........</div>
+        <div className="hidden tablet:invisible tablet:block laptop:invisible laptop:block">
+          .........
+        </div>
         <h2 className="text-5xl font-semibold">FAQ’s</h2>
       </div>
 
@@ -39,7 +41,7 @@ export default function Section10() {
         {faqData.map((faq, index) => (
           <div
             key={faq.question}
-            className={`relative flex flex-col items-center gap-6 py-6 tablet:flex-row tablet:items-start ${
+            className={`relative flex flex-col items-center gap-6 px-10 py-10 tablet:flex-row tablet:items-start ${
               index !== faqData.length - 1 ? "border-b border-gray-300" : ""
             }`}
           >
@@ -58,7 +60,7 @@ export default function Section10() {
                   {faq.question}
                 </p>
               </div>
-              <p className="max-w-2xl text-center text-sm font-normal text-black">
+              <p className="max-w-2xl py-4 text-center text-sm font-normal text-black">
                 {faq.answer}
               </p>
             </div>

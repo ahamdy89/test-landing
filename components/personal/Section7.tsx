@@ -40,16 +40,16 @@ export default function Section7() {
           operations, enhanced security, and saved time!
         </p>
       </div>
-      <div className="mx-auto flex justify-start gap-4 overflow-x-scroll px-4 py-12 scrollbar-hide tablet:justify-center laptop:overflow-x-hidden">
+      <div className="flex justify-start gap-4 overflow-x-scroll px-4 py-12 scrollbar-hide tablet:m-auto tablet:w-[90%] tablet:justify-center laptop:overflow-x-hidden">
         {peoples.map((people) => (
           <div
             key={people.name}
-            className="flex min-w-[19.875rem]  flex-col rounded-[3.4rem] bg-off-white-card p-2.5"
+            className="flex min-w-[19.875rem] flex-col rounded-[3.4rem] bg-off-white-card p-2.5 tablet:min-w-0"
           >
             <Image
               src={people.img}
               alt={people.name}
-              className="max-h-[17rem] max-w-[18.5rem]"
+              className="max-h-[17rem] max-w-[18.5rem] tablet:max-w-full"
             />
             <div className="flex justify-between px-7 pb-8 pt-4">
               <div className="text-black ">

@@ -19,7 +19,7 @@ export default function Section5() {
           alt=""
         />
       </div>
-      <div className="gap-3laptop:max-w-[50%] flex grow basis-1/2 flex-col items-start text-center laptop:text-start">
+      <div className="flex grow basis-1/2 flex-col items-start gap-3 text-center laptop:max-w-[50%] laptop:text-start">
         <h2 className="text-[40px] font-semibold leading-[44px] tablet:font-medium">
           <Trans t={t} i18nKey="personal:SECTION_5_HEADING" />
         </h2>

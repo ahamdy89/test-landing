@@ -16,12 +16,12 @@ export default function Section1() {
             <ul className="flex gap-8">
               <li>
                 <Link href="/personal">
-                  <p className="text-lg font-medium">Home</p>
+                  <p className="text-lg font-medium text-white">Home</p>
                 </Link>
               </li>
               <li>
                 <Link href="/jobs-board">
-                  <p className="text-lg font-medium">Careers</p>
+                  <p className="text-lg font-medium  text-white">Careers</p>
                 </Link>
               </li>
             </ul>
@@ -29,7 +29,7 @@ export default function Section1() {
         </Header>
       </div>
       <section className="w-full">
-        <div className="mx-auto flex flex-col items-center justify-between px-8 py-6 pb-10 text-center tablet:flex-auto  tablet:items-start tablet:px-16 tablet:py-32 tablet:text-start laptop:w-full laptop:max-w-screen-laptop laptop:flex-row laptop:items-center laptop:px-0  laptop:pb-32 laptop:pt-16 laptop:text-start">
+        <div className="mx-auto flex flex-col items-center justify-between px-8 py-6 pb-10 text-center tablet:flex-auto  tablet:flex-row tablet:items-start tablet:px-16 tablet:py-32 tablet:text-start laptop:w-full laptop:max-w-screen-laptop laptop:flex-row laptop:items-center  laptop:px-0 laptop:pb-32 laptop:pt-16 laptop:text-start">
           <div className="min-w-[15rem] max-w-[25rem] pt-4">
             <p className="tablet:leading-15 text-4xl font-normal leading-10 text-white">
               Seamless financial

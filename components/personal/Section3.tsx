@@ -29,7 +29,7 @@ export default function Section3({
       </div>
 
       <div className="bg-main-background-gradient py-16 text-white">
-        <div className="mx-auto flex max-w-screen-laptop flex-col items-center justify-evenly gap-y-14  laptop:flex-row">
+        <div className="mx-auto flex max-w-screen-laptop flex-col items-center justify-evenly gap-y-14 tablet:flex-row laptop:flex-row">
           <div className="flex flex-col items-center justify-center gap-2">
             <p className="text-[34px] font-semibold">
               EGP <span className="text-5xl">6M+</span>
