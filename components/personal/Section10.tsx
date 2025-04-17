@@ -42,7 +42,7 @@ export default function Section10() {
           <div
             key={faq.question}
             className={`relative flex flex-col items-center gap-6 px-10 py-10 tablet:flex-row tablet:items-start ${
-              index !== faqData.length - 1 ? "border-b border-gray-300" : ""
+              index !== faqData.length - 1 ? "border-b border-black" : ""
             }`}
           >
             <div className="hidden h-12 w-12 items-center pt-3 tablet:block">
@@ -54,7 +54,7 @@ export default function Section10() {
                 <Image
                   src={faqIcon}
                   alt="FAQ Icon"
-                  className="absolute left-6 block h-10  w-10 tablet:hidden  "
+                  className="absolute left-6 block h-10  w-10 tablet:hidden"
                 />
                 <p className=" text-xl font-semibold text-black ">
                   {faq.question}
