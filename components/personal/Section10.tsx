@@ -30,7 +30,8 @@ export default function Section10() {
 
   return (
     <section className="flex w-full flex-col items-center justify-center py-16 ">
-      <div className="w-full bg-main-background-gradient py-6 text-center text-white">
+      <div className="flex w-full flex-row justify-center gap-8 bg-main-background-gradient py-6 text-white">
+        <div className="invisible">.........</div>
         <h2 className="text-5xl font-semibold">FAQ’s</h2>
       </div>
 
@@ -57,7 +58,7 @@ export default function Section10() {
                   {faq.question}
                 </p>
               </div>
-              <p className="max-w-2xl px-8 pt-5 text-center text-sm font-normal text-black">
+              <p className="max-w-2xl text-center text-sm font-normal text-black">
                 {faq.answer}
               </p>
             </div>

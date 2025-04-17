@@ -32,7 +32,7 @@ export default function Section7() {
   return (
     <section className="w-full">
       <div className="bg-main-background-gradient px-9 py-12 text-center text-white tablet:px-20 laptop:px-52">
-        <h2 className="text-4xl font-semibold ">
+        <h2 className="text-[40px] font-semibold ">
           Don’t just take our word for it!
         </h2>
         <p className="mx-auto max-w-2xl pt-8 text-xl font-semibold">

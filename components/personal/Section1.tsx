@@ -28,26 +28,26 @@ export default function Section1() {
           </nav>
         </Header>
       </div>
-      <section className=" w-full">
-        <div className=" mx-auto flex flex-col items-center justify-between gap-14 px-8 py-6  pb-10 text-center tablet:flex-row  tablet:items-start tablet:px-16 tablet:py-32 tablet:text-start laptop:w-full laptop:max-w-screen-laptop laptop:flex-row laptop:items-center laptop:px-0  laptop:pb-32 laptop:pt-16 laptop:text-start">
-          <div className="max-w-sm pt-4">
+      <section className="w-full">
+        <div className="mx-auto flex flex-col items-center justify-between px-8 py-6 pb-10 text-center tablet:flex-auto  tablet:items-start tablet:px-16 tablet:py-32 tablet:text-start laptop:w-full laptop:max-w-screen-laptop laptop:flex-row laptop:items-center laptop:px-0  laptop:pb-32 laptop:pt-16 laptop:text-start">
+          <div className="min-w-[15rem] max-w-[25rem] pt-4">
             <p className="tablet:leading-15 text-4xl font-normal leading-10 text-white">
               Seamless financial
             </p>
-            <div className="relative flex h-auto flex-col items-center gap-x-2.5 overflow-hidden tablet:items-start laptop:flex-row laptop:items-center">
+            <div className="relative flex h-auto flex-col items-center gap-x-5 overflow-hidden tablet:items-start laptop:flex-row laptop:items-center">
               <p className="text-4xl font-normal leading-10 text-white">
                 solutions
               </p>
-              <div className="relative  h-16 w-[15rem] overflow-hidden ">
-                <span className={`${styles.animatedSpan} ${styles.animated1}`}>
+              <div className="relative flex h-16 w-[18rem] items-center overflow-hidden">
+                <p className={`${styles.animatedSpan} ${styles.animated1}`}>
                   Payouts
-                </span>
-                <span className={`${styles.animatedSpan} ${styles.animated2}`}>
+                </p>
+                <p className={`${styles.animatedSpan} ${styles.animated2}`}>
                   Mobile wallet
-                </span>
-                <span className={`${styles.animatedSpan} ${styles.animated3}`}>
+                </p>
+                <p className={`${styles.animatedSpan} ${styles.animated3}`}>
                   Remittances
-                </span>
+                </p>
               </div>
             </div>
             <p className="text-xl text-white">
@@ -57,8 +57,9 @@ export default function Section1() {
             </p>
           </div>
           <div className="relative">
-            <div className=" flex h-[242px] w-[162px] items-center justify-center rounded-[24px] bg-white shadow-[0_4px_8px_rgba(0,0,0,0.1)] tablet:h-[395px] tablet:w-[262px] laptop:h-[395px] laptop:w-[262px]"></div>
-            <div className="absolute bottom-1/2 left-1/2 z-50 h-[60px] w-[60px] -translate-x-1/2 translate-y-1/2 transform rounded-full bg-main-background-gradient tablet:h-[100px] tablet:w-[100px] laptop:h-[100px] laptop:w-[100px]"></div>
+            <div
+              className={`${styles.maskedCard} h-[242px] w-[162px] rounded-[24px] bg-white shadow-[0_4px_8px_rgba(0,0,0,0.1)] tablet:h-[395px] tablet:w-[262px]`}
+            ></div>
           </div>
         </div>
       </section>

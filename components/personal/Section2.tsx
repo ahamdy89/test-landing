@@ -9,7 +9,7 @@ import bosta from "../../public/images/partners/bosta.png";
 
 export default function Section2() {
   return (
-    <section className="max-w-screen-mobile flex w-full flex-col items-center gap-14 px-8 py-10  laptop:max-w-screen-laptop">
+    <section className="max-w-screen-mobile flex w-full flex-col items-center gap-14 py-10 laptop:max-w-screen-laptop">
       <div className={styles.logosContainer}>
         <Image
           className={`${styles.logo} ${styles.logo1}`}

@@ -12,7 +12,7 @@ export default function Section6({ openGetStartedModal }: Props) {
   return (
     <section className="max-w-screen-mobile isolate flex w-full flex-col items-center gap-14 overflow-y-hidden px-8 pb-16  tablet:flex-row-reverse laptop:max-w-screen-laptop laptop:flex-row-reverse">
       <div className="flex grow basis-1/2 flex-col items-start gap-3 text-center tablet:text-start laptop:max-w-[50%] laptop:text-start">
-        <h2 className="text-4xl font-semibold tablet:font-medium">
+        <h2 className="text-[40px] font-semibold leading-[44px] tablet:font-medium">
           <Trans t={t} i18nKey="personal:SECTION_6_HEADING" />
         </h2>
         <p className="text-xl text-[#6D6C6C]">
