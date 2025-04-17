@@ -29,21 +29,21 @@ export default function Section3({
       </div>
 
       <div className="bg-main-background-gradient py-16 text-white">
-        <div className="mx-auto flex max-w-screen-laptop flex-col items-center justify-evenly gap-y-14  laptop:flex-row">
+        <div className="mx-auto flex max-w-screen-laptop flex-col items-center justify-evenly gap-y-14 tablet:flex-row laptop:flex-row">
           <div className="flex flex-col items-center justify-center gap-2">
-            <p className="text-3xl font-semibold">
+            <p className="text-[34px] font-semibold">
               EGP <span className="text-5xl">6M+</span>
             </p>
             <p className="text-xl font-semibold">Processed transactions</p>
           </div>
           <div className="flex flex-col items-center justify-center gap-2">
-            <p className="text-3xl font-semibold">
-              EGP <span className="text-5xl">20B+</span>
+            <p className="text-[34px] font-semibold">
+              EGP <span className="text-5xl">12B+</span>
             </p>
             <p className="text-xl font-semibold">Processed volume</p>
           </div>
           <div className="flex flex-col items-center justify-center  gap-y-2">
-            <p className="text-5xl font-semibold ">200K+</p>
+            <p className="text-5xl font-semibold">200K+</p>
             <p className="text-xl font-semibold">Axis wallet downloads</p>
           </div>
         </div>

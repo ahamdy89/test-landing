@@ -16,7 +16,7 @@ export default function Footer() {
     <footer className="w-full bg-off-white-footer">
       <div className="max-w-screen-mobile mx-auto px-9 py-12 laptop:max-w-screen-laptop">
         {/* Footer Links Section - Grid Layout */}
-        <div className="flex flex-wrap gap-20 ">
+        {/* <div className="flex flex-wrap gap-20 ">
           <div>
             <p className="pb-2 text-sm font-semibold text-black">Products</p>
             <p className="text-sm font-medium text-off-white-text">
@@ -39,10 +39,10 @@ export default function Footer() {
             <p className="text-sm font-medium text-off-white-text">Tutorials</p>
             <p className="text-sm font-medium text-off-white-text">Support</p>
           </div>
-        </div>
+        </div> */}
 
         {/* Bottom Section - Responsive Layout */}
-        <div className="flex flex-col items-center justify-between gap-6 pt-4 tablet:flex-row tablet:pt-20">
+        <div className="flex flex-col items-center justify-between gap-6 pt-4 tablet:flex-row ">
           <Logo className="hidden w-24 fill-brand-primary tablet:block" />
           {/* Tablet & Mobile: App Store Section First */}
           <div className="order-1 flex flex-col justify-center gap-2 tablet:order-3 tablet:flex-row">

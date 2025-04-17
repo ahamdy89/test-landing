@@ -35,6 +35,11 @@ const esRebondGrotesque = localFont({
       style: "normal",
       weight: "700",
     },
+    {
+      path: "../public/fonts/ESRebondGrotesque-Extrabold.otf",
+      style: "normal",
+      weight: "900",
+    },
   ],
 });
 const avenirArabic = localFont({
