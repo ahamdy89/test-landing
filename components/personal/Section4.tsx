@@ -6,8 +6,8 @@ export default function Section4() {
   const { t } = useTranslation(["personal", "common"]);
 
   return (
-    <section className="max-w-screen-mobile isolate flex w-full flex-col-reverse items-center gap-14 overflow-y-hidden px-8 pt-4  tablet:flex-row-reverse laptop:max-w-screen-laptop laptop:flex-row-reverse laptop:px-16 ">
-      <div className="flex basis-1/2 flex-col items-start gap-3 text-center tablet:text-start laptop:max-w-[50%] laptop:text-start">
+    <section className="flex w-full max-w-screen-mobile flex-col-reverse items-center gap-14 px-8 pt-16 tablet:flex tablet:flex-row-reverse laptop:max-w-screen-laptop laptop:flex-row-reverse laptop:justify-center laptop:p-0">
+      <div className="flex basis-1/2 flex-col gap-3 text-center align-middle tablet:text-start">
         <h2 className="text-[40px] font-semibold leading-[44px] tablet:font-medium">
           <Trans t={t} i18nKey="personal:SECTION_4_HEADING" />
         </h2>
@@ -15,9 +15,14 @@ export default function Section4() {
           <Trans t={t} i18nKey="personal:SECTION_4_PARAGRAPH" />
         </p>
       </div>
-
-      <div aria-hidden className="h-[32rem] w-80 place-items-center  ">
-        <Image aria-hidden src={picSection4URL} placeholder="blur" alt="" />
+      <div aria-hidden className="flex basis-1/2">
+        <Image
+          aria-hidden
+          src={picSection4URL}
+          placeholder="blur"
+          alt=""
+          className="h-full w-full laptop:h-[620px] laptop:w-[85%]"
+        />
       </div>
     </section>
   );

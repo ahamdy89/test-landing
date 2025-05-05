@@ -7,24 +7,24 @@ export default function Section10() {
 
   const faqData = [
     {
-      question: "What is Axis?",
+      question: "What is axis?",
       answer:
-        "Axis is an Egyptian fintech company licensed by the Central Bank of Egypt, building the mobile money infrastructure for Egypt and beyond. Axis offers three core solutions tailored for both individuals and businesses: Axis Wallet, Axis Payouts, and Axis Remittance.",
+        "axis is an Egyptian fintech company licensed by the Central Bank of Egypt, building the mobile money infrastructure for Egypt and beyond. axis offers three core solutions tailored for both individuals and businesses: axis Wallet, axis Payouts, and axis Remittance.",
     },
     {
-      question: "What is Axis Payouts?",
+      question: "What is axis Payouts?",
       answer:
-        "Axis Payouts simplifies financial operations for businesses, enabling instant and reliable disbursements to mobile wallets (instantly), or bank accounts or prepaid cards in Egypt.",
+        "axis Payouts simplifies financial operations for businesses, enabling instant and reliable disbursements to mobile wallets (instantly), or bank accounts or prepaid cards in Egypt.",
     },
     {
-      question: "What is Axis mobile wallet?",
+      question: "What is axis mobile wallet?",
       answer:
-        "Axis Wallet provides Egyptians with a secure and user-friendly digital account for instant money transfers, bill payments, and online and offline shopping via a virtual Visa card.",
+        "axis Wallet provides Egyptians with a secure and user-friendly digital account for instant money transfers, bill payments, and online and offline shopping via a virtual Visa card.",
     },
     {
-      question: "What is Axis Remittances?",
+      question: "What is axis Remittances?",
       answer:
-        "Axis Remittances facilitates global transfers into Egypt, offering businesses instant, secure international payments to wallets, bank accounts, or as cash payouts.",
+        "axis Remittances facilitates global transfers into Egypt, offering businesses instant, secure international payments to wallets, bank accounts, or as cash payouts.",
     },
   ];
 
