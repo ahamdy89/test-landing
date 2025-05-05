@@ -6,6 +6,7 @@ const {
 const typographyConfig = require("./tailwind-typography.config");
 
 module.exports = {
+  darkMode: ["class"],
   content: ["./pages/**/*.tsx", "./components/**/*.tsx", "./lib/**/*.tsx"],
   theme: {
     extend: {
@@ -23,8 +24,12 @@ module.exports = {
       },
       keyframes: {
         "infinite-linear-loader": {
-          from: { "background-position-x": "150%" },
-          to: { "background-position-x": "-50%" },
+          from: {
+            "background-position-x": "150%",
+          },
+          to: {
+            "background-position-x": "-50%",
+          },
         },
         "scale-in": {
           from: {
@@ -71,41 +76,46 @@ module.exports = {
           },
         },
       },
-    },
-    colors: {
-      inherit: colors.inherit,
-      current: colors.current,
-      transparent: colors.transparent,
-      white: colors.white,
-      black: colors.black,
-      gray: colors.gray,
-      red: colors.red,
-      "off-white": {
-        DEFAULT: "rgb(var(--off-white) / <alpha-value>)",
-        card: "#D3D2D263",
-        footer: "#D9D9D938",
-        text: "#878585",
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
-      "brand-primary": {
-        light: "rgb(var(--brand-primary-light) / <alpha-value>)",
-        DEFAULT: "rgb(var(--brand-primary) / <alpha-value>)",
-        dark: "rgb(var(--brand-primary-dark) / <alpha-value>)",
-        darkest: "rgb(var(--brand-primary-darkest) / <alpha-value>)",
-      },
-      bronze: {
-        light: "rgb(var(--bronze-light) / <alpha-value>)",
-        DEFAULT: "rgb(var(--bronze) / <alpha-value>)",
-        dark: "rgb(var(--bronze-dark) / <alpha-value>)",
-      },
-      blue: {
-        light: "rgb(var(--blue-light) / <alpha-value>)",
-        DEFAULT: "rgb(var(--blue) / <alpha-value>)",
-        dark: "rgb(var(--blue-dark) / <alpha-value>)",
-      },
-      pink: {
-        light: "rgb(var(--pink-light) / <alpha-value>)",
-        DEFAULT: "rgb(var(--pink) / <alpha-value>)",
-        dark: "rgb(var(--pink-dark) / <alpha-value>)",
+      colors: {
+        inherit: colors.inherit,
+        current: colors.current,
+        transparent: colors.transparent,
+        white: colors.white,
+        black: colors.black,
+        gray: colors.gray,
+        red: colors.red,
+        "off-white": {
+          DEFAULT: "rgb(var(--off-white) / <alpha-value>)",
+          card: "#D3D2D263",
+          footer: "#D9D9D938",
+          text: "#878585",
+        },
+        "brand-primary": {
+          light: "rgb(var(--brand-primary-light) / <alpha-value>)",
+          DEFAULT: "rgb(var(--brand-primary) / <alpha-value>)",
+          dark: "rgb(var(--brand-primary-dark) / <alpha-value>)",
+          darkest: "rgb(var(--brand-primary-darkest) / <alpha-value>)",
+        },
+        bronze: {
+          light: "rgb(var(--bronze-light) / <alpha-value>)",
+          DEFAULT: "rgb(var(--bronze) / <alpha-value>)",
+          dark: "rgb(var(--bronze-dark) / <alpha-value>)",
+        },
+        blue: {
+          light: "rgb(var(--blue-light) / <alpha-value>)",
+          DEFAULT: "rgb(var(--blue) / <alpha-value>)",
+          dark: "rgb(var(--blue-dark) / <alpha-value>)",
+        },
+        pink: {
+          light: "rgb(var(--pink-light) / <alpha-value>)",
+          DEFAULT: "rgb(var(--pink) / <alpha-value>)",
+          dark: "rgb(var(--pink-dark) / <alpha-value>)",
+        },
       },
     },
     screens: {
@@ -170,5 +180,6 @@ module.exports = {
         }
       );
     }),
+    require("tailwindcss-animate"),
   ],
 };
