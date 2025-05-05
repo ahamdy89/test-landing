@@ -1,16 +1,14 @@
-import type {
-  NextPage,
-  InferGetStaticPropsType,
-  GetStaticPropsContext,
-} from "next";
-import { useRouter } from "next/router";
-import type { StaticImageData } from "next/image";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import axios from "axios";
+import type { InferGetServerSidePropsType, NextPage } from "next";
 import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import type { StaticImageData } from "next/image";
+import { useRouter } from "next/router";
+import { useState } from "react";
 import Metadata from "../components/common/Metadata";
-import socialMediaImageEn from "../public/images/common/social-media-image-en.jpg";
-import socialMediaImageAR from "../public/images/common/social-media-image-ar.jpg";
+import HowToVideoModal from "../components/how-to/HowToVideoModal";
 import Section1 from "../components/personal/Section1";
+import Section10 from "../components/personal/Section10";
 import Section2 from "../components/personal/Section2";
 import Section3 from "../components/personal/Section3";
 import Section4 from "../components/personal/Section4";
@@ -19,33 +17,44 @@ import Section6 from "../components/personal/Section6";
 import Section7 from "../components/personal/Section7";
 import Section8 from "../components/personal/Section8";
 import Section9 from "../components/personal/Section9";
-import Section10 from "../components/personal/Section10";
-import Section11 from "../components/personal/Section11";
-import Section12 from "../components/personal/Section12";
-import Section13 from "../components/personal/Section13";
-import GetStartedModal from "../components/personal/GetStartedModal";
-import Section14 from "../components/personal/Section14";
-import HowToVideoModal from "../components/how-to/HowToVideoModal";
-import { useState } from "react";
+import socialMediaImageAR from "../public/images/common/social-media-image-ar.jpg";
+import socialMediaImageEn from "../public/images/common/social-media-image-en.jpg";
 
 const socialMediaImages: { [locale: string]: StaticImageData } = {
   en: socialMediaImageEn,
   ar: socialMediaImageAR,
 };
 
-const getStaticProps = async function ({
-  locale = "en",
-}: GetStaticPropsContext) {
-  return {
-    props: {
-      locale,
-      ...(await serverSideTranslations(locale, ["common", "personal"])),
-    },
-  };
-};
+async function getServerSideProps({ locale = "en" }) {
+  try {
+    const response = await axios.get(process.env.YOUTUBE_HOW_TO_PLAYLIST_URL!, {
+      params: {
+        part: "snippet",
+        playlistId: "PLi_AV_60ig0FJ7TVlo6UvgXRQg_9GQBHe",
+        key: process.env.YOUTUBE_API_KEY,
+        maxResults: 50,
+      },
+    });
+    return {
+      props: {
+        videos: response.data,
+        locale,
+        ...(await serverSideTranslations(locale, ["common", "personal"])),
+      },
+    };
+  } catch (error) {
+    return {
+      props: {
+        videos: null,
+        locale,
+        ...(await serverSideTranslations(locale, ["common", "personal"])),
+      },
+    };
+  }
+}
 
-type Props = InferGetStaticPropsType<typeof getStaticProps>;
-const Personal: NextPage<Props> = ({ locale }) => {
+type Props = InferGetServerSidePropsType<typeof getServerSideProps>;
+const Personal: NextPage<Props> = ({ locale, videos }) => {
   const { t } = useTranslation("personal");
 
   const router = useRouter();
@@ -90,7 +99,6 @@ const Personal: NextPage<Props> = ({ locale }) => {
         video={videoUrl}
       />
       <Section1 />
-
       <Section2 />
       <Section3
         openGetStartedModal={openGetStartedModal}
@@ -99,11 +107,9 @@ const Personal: NextPage<Props> = ({ locale }) => {
         locale={locale}
       />
       <Section4 />
-
       <Section5 />
       <Section6 openGetStartedModal={openGetStartedModal} />
-
-      <Section7 />
+      <Section7 videos={videos} />
       <Section8 />
       <Section9 />
       <Section10 />
@@ -111,5 +117,5 @@ const Personal: NextPage<Props> = ({ locale }) => {
   );
 };
 
-export { getStaticProps };
+export { getServerSideProps };
 export default Personal;
