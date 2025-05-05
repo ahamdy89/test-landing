@@ -93,7 +93,7 @@ export default function Section7({ videos }: Section7Props) {
           Don&apos;t just take our word for it!
         </h2>
         <p className="mx-auto max-w-2xl pt-8 text-xl font-semibold">
-          See what our clients have to say about how Axis has transformed their
+          See what our clients have to say about how axis has transformed their
           operations, enhanced security, and saved time!
         </p>
       </div>

@@ -8,13 +8,14 @@ import appleStoreBlack from "../../public/images/common/apple-store-black.png";
 import googlePlayBlack from "../../public/images/common/google-play-black.png";
 import huaweiStoreBlack from "../../public/images/common/huawei-store-black.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   const { t } = useTranslation("common");
 
   return (
     <footer className="w-full bg-off-white-footer">
-      <div className="max-w-screen-mobile mx-auto px-9 py-12 laptop:max-w-screen-laptop">
+      <div className="mx-auto max-w-screen-mobile px-9 py-12 laptop:max-w-screen-laptop">
         {/* Footer Links Section - Grid Layout */}
         {/* <div className="flex flex-wrap gap-20 ">
           <div>
@@ -42,6 +43,20 @@ export default function Footer() {
         </div> */}
 
         {/* Bottom Section - Responsive Layout */}
+        <div className="flex justify-center gap-10 tablet:justify-start laptop:justify-start">
+          <Link
+            className="text-xs text-[#878585] underline"
+            href="/terms-and-conditions"
+          >
+            <Trans t={t} i18nKey="TERMS_AND_CONDITIONS" />
+          </Link>
+          <Link
+            className="text-xs text-[#878585] underline"
+            href="/privacy-policy"
+          >
+            <Trans t={t} i18nKey="PRIVACY_POLICY" />
+          </Link>
+        </div>
         <div className="flex flex-col items-center justify-between gap-6 pt-4 tablet:flex-row ">
           <Logo className="hidden w-24 fill-brand-primary tablet:block" />
           {/* Tablet & Mobile: App Store Section First */}
@@ -81,29 +96,45 @@ export default function Footer() {
                 href={process.env.NEXT_PUBLIC_LINKEDIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="h-6 w-6"
               >
-                <Image src={linkedInIcon} alt="LinkedIn" />
+                <Image
+                  src={linkedInIcon}
+                  alt="LinkedIn"
+                  className="h-full w-full"
+                />
               </a>
               <a
                 href={process.env.NEXT_PUBLIC_FACEBOOK_URL}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="h-6 w-6"
               >
-                <Image src={facebookIcon} alt="Facebook" />
+                <Image
+                  src={facebookIcon}
+                  alt="Facebook"
+                  className="h-full w-full"
+                />
               </a>
               <a
                 href={process.env.NEXT_PUBLIC_INSTAGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="h-6 w-6"
               >
-                <Image src={instagramIcon} alt="Instagram" />
+                <Image
+                  src={instagramIcon}
+                  alt="Instagram"
+                  className="h-full w-full"
+                />
               </a>
               <a
                 href={process.env.NEXT_PUBLIC_TWITTER_URL}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="h-6 w-6"
               >
-                <Image src={xIcon} alt="Twitter" />
+                <Image src={xIcon} alt="Twitter" className="h-full w-full" />
               </a>
             </div>
           </div>
@@ -112,7 +143,7 @@ export default function Footer() {
           <div className="order-3 flex items-center gap-4 text-center tablet:order-4">
             <Logo className="block w-24 fill-brand-primary tablet:hidden" />
             <p className="whitespace-nowrap">Cairo, Egypt </p>
-            <p className="whitespace-nowrap">@2025 Axis </p>
+            <p className="whitespace-nowrap">@2025 axis </p>
           </div>
         </div>
       </div>

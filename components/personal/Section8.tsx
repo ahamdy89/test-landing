@@ -7,15 +7,15 @@ export default function Section8() {
     {
       title: "Omnichannel support",
       paragraph:
-        "Whether you have a team of 2 or 2000, our technical and financial experts are always ready to help 24/7 ",
+        "Whether you have a team of 2 or 2000, our technical and financial experts are always ready to help 24/7",
     },
     {
-      title: "API superpowers ",
+      title: "API superpowers",
       paragraph:
-        "integrate with Axis and get our cutting-edge financial  services at your fingertips ",
+        "Integrate with axis and get our cutting-edge financial services at your fingertips",
     },
     {
-      title: "Dedicated account manager ",
+      title: "Dedicated account manager",
       paragraph:
         "Your dedicated account manger is 1 call away whenever you have a question or need help ",
     },

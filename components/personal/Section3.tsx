@@ -44,7 +44,7 @@ export default function Section3({
           </div>
           <div className="flex flex-col items-center justify-center  gap-y-2">
             <p className="text-5xl font-semibold">200K+</p>
-            <p className="text-xl font-semibold">Axis wallet downloads</p>
+            <p className="text-xl font-semibold">axis wallet downloads</p>
           </div>
         </div>
       </div>

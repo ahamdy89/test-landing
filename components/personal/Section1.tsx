@@ -10,9 +10,9 @@ export default function Section1() {
     <div
       className={`${styles.sectionBackground} flex w-full flex-col items-center text-black`}
     >
-      <div className="max-w-screen-mobile w-full px-8 py-8 tablet:px-16 laptop:max-w-screen-laptop laptop:px-0">
+      <div className="w-full max-w-screen-mobile px-8 py-8 tablet:px-16 laptop:max-w-screen-laptop laptop:px-0">
         <Header>
-          <nav className=" hidden justify-center  tablet:flex  laptop:flex">
+          {/* <nav className=" hidden justify-center  tablet:flex  laptop:flex">
             <ul className="flex gap-8">
               <li>
                 <Link href="/personal">
@@ -25,7 +25,7 @@ export default function Section1() {
                 </Link>
               </li>
             </ul>
-          </nav>
+          </nav> */}
         </Header>
       </div>
       <section className="w-full">
