@@ -104,15 +104,15 @@ export default function Section7({ videos }: Section7Props) {
             loop: true,
             align: "start",
           }}
-          className="w-full max-w-[1080px] px-6"
+          className="sm:px-6 w-full max-w-[1080px] px-0"
         >
-          <CarouselContent className=" sm:mx-0  mx-5 gap-5">
+          <CarouselContent className=" sm:mx-0 mx-5 gap-5">
             {videos.items.map((video, index) => (
               <CarouselItem
                 key={video.id}
                 className={cn(
                   "flex w-[19.875rem] basis-auto flex-col rounded-[3.4rem] bg-off-white-card p-2.5",
-                  index === videos.items.length - 1 && "mr-5" // Add margin-right to the last item
+                  index === videos.items.length - 1 && "mr-5"
                 )}
                 onClick={() =>
                   handleVideoClick(video.snippet.resourceId.videoId)
