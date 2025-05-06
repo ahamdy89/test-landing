@@ -111,7 +111,7 @@ export default function Section7({ videos }: Section7Props) {
               <CarouselItem
                 key={video.id}
                 className={cn(
-                  "sm:min-w-full md:min-w-full flex max-w-[19.875rem] basis-auto flex-col rounded-[3.4rem] bg-off-white-card p-2.5",
+                  "flex w-[19.875rem] basis-auto flex-col rounded-[3.4rem] bg-off-white-card p-2.5",
                   index === videos.items.length - 1 && "mr-5" // Add margin-right to the last item
                 )}
                 onClick={() =>
