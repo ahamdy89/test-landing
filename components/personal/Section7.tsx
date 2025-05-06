@@ -104,9 +104,9 @@ export default function Section7({ videos }: Section7Props) {
             loop: true,
             align: "start",
           }}
-          className="sm:px-6 w-full max-w-[1080px] px-0"
+          className="w-full max-w-[1080px] px-0 tablet:px-6 laptop:px-6"
         >
-          <CarouselContent className=" sm:mx-0 mx-5 gap-5">
+          <CarouselContent className=" mx-5 gap-5">
             {videos.items.map((video, index) => (
               <CarouselItem
                 key={video.id}
