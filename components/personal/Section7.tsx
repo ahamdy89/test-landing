@@ -106,12 +106,12 @@ export default function Section7({ videos }: Section7Props) {
           }}
           className="w-full max-w-[1080px] px-6"
         >
-          <CarouselContent className=" mx-5 gap-5">
+          <CarouselContent className=" sm:mx-0  mx-5 gap-5">
             {videos.items.map((video, index) => (
               <CarouselItem
                 key={video.id}
                 className={cn(
-                  "flex max-w-[19.875rem] basis-auto flex-col rounded-[3.4rem] bg-off-white-card p-2.5",
+                  "sm:min-w-full md:min-w-full flex max-w-[19.875rem] basis-auto flex-col rounded-[3.4rem] bg-off-white-card p-2.5",
                   index === videos.items.length - 1 && "mr-5" // Add margin-right to the last item
                 )}
                 onClick={() =>
@@ -140,7 +140,7 @@ export default function Section7({ videos }: Section7Props) {
                     </div>
                   </div>
                 </div>
-                <div className="flex justify-between px-7 pb-8 pt-4">
+                <div className="flex w-full justify-between px-7 pb-8 pt-4">
                   <div className="text-black">
                     {(() => {
                       const parsed = parseVideoTitle(video.snippet.title);
