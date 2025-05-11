@@ -105,7 +105,7 @@ export default function Section7({ videos }: Section7Props) {
           }}
           className="w-full max-w-[1080px] px-0 tablet:px-6 laptop:px-6"
         >
-          <CarouselContent className=" sm:mx-0 mx-5 gap-5">
+          <CarouselContent className=" sm:mx-1 mx-5 gap-5">
             {videos.items.map((video, index) => (
               <CarouselItem
                 key={video.id}
@@ -117,13 +117,14 @@ export default function Section7({ videos }: Section7Props) {
                   handleVideoClick(video.snippet.resourceId.videoId)
                 }
               >
-                <div className="relative cursor-pointer">
+                <div className="relative cursor-pointer px-3">
                   <Image
                     src={video.snippet.thumbnails.high.url}
                     alt={video.snippet.title}
-                    width={320}
+                    sizes="100vw"
+                    width={0}
                     height={180}
-                    className="h-[17rem] w-full rounded-[3rem] object-cover "
+                    className="h-[17rem] w-full rounded-[3rem] object-cover tablet:px-3"
                     priority={false}
                     loading="lazy"
                   />
