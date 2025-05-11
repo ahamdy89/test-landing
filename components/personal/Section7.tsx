@@ -102,16 +102,15 @@ export default function Section7({ videos }: Section7Props) {
         <Carousel
           opts={{
             loop: true,
-            align: "start",
           }}
           className="w-full max-w-[1080px] px-0 tablet:px-6 laptop:px-6"
         >
-          <CarouselContent className=" mx-5 gap-5">
+          <CarouselContent className=" sm:mx-0 mx-5 gap-5">
             {videos.items.map((video, index) => (
               <CarouselItem
                 key={video.id}
                 className={cn(
-                  "flex w-[19.875rem] basis-auto flex-col rounded-[3.4rem] bg-off-white-card p-2.5",
+                  " flex w-full basis-auto flex-col items-center justify-center rounded-[3.4rem] bg-off-white-card p-2.5 tablet:w-[19.875rem]",
                   index === videos.items.length - 1 && "mr-5"
                 )}
                 onClick={() =>
@@ -168,8 +167,8 @@ export default function Section7({ videos }: Section7Props) {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="left-0" />
-          <CarouselNext className="right-0" />
+          <CarouselPrevious className="left-0 -translate-x-1/2" />
+          <CarouselNext className="right-0 translate-x-1/2" />
         </Carousel>
       </div>
 
