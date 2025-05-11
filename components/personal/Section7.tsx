@@ -117,15 +117,14 @@ export default function Section7({ videos }: Section7Props) {
                   handleVideoClick(video.snippet.resourceId.videoId)
                 }
               >
-                <div className="relative cursor-pointer">
+                <div className="relative w-full cursor-pointer">
                   <Image
                     src={video.snippet.thumbnails.high.url}
                     alt={video.snippet.title}
-                    height={180}
-                    sizes="(max-width: 768px) 100vw,
-                          (max-width: 1200px) 50vw,33vw"
                     width={320}
-                    className="h-[17rem] w-full rounded-[3rem] object-cover "
+                    height={180}
+                    sizes="(max-width: 768px) 100vw, 320px"
+                    className="h-[17rem] w-full rounded-[3rem] object-cover"
                     priority={false}
                     loading="lazy"
                   />
