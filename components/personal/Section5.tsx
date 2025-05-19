@@ -15,13 +15,12 @@ export default function Section5() {
           <Trans t={t} i18nKey="personal:SECTION_5_PARAGRAPH" />
         </p>
       </div>
-      <div className="relative h-[300px] w-full tablet:h-[430px]  tablet:basis-1/2 laptop:h-[500px] laptop:basis-1/2">
+      <div className="relative h-[300px] w-full tablet:h-[430px] flex items-center  tablet:basis-1/2 laptop:h-[500px] laptop:basis-1/2">
         <Image
           src={section5URL}
           alt=""
           placeholder="blur"
-          fill
-          className="object-cover"
+          className="w-full h-4/5"
         />
       </div>
     </section>

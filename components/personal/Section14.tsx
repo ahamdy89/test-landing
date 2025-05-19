@@ -7,7 +7,7 @@ export default function Section14() {
   const { t } = useTranslation(["personal", "common"]);
 
   return (
-    <div className="max-w-screen-mobile w-full px-8 pt-12 text-white bg-bleed-brand-primary-dark laptop:max-w-screen-laptop">
+    <div className="w-full max-w-screen-mobile px-8 pt-12 text-white bg-bleed-brand-primary-dark laptop:max-w-screen-laptop">
       <div className="flex flex-col items-center justify-between pb-14 laptop:flex-row">
         <div className="mb-8 text-3xl font-semibold laptop:mb-0">
           {t("personal:SECTION_14_HEADING")}

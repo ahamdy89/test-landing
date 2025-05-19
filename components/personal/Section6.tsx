@@ -10,7 +10,7 @@ export default function Section6({ openGetStartedModal }: Props) {
   const { t } = useTranslation(["personal", "common"]);
 
   return (
-    <section className="isolate flex w-full max-w-screen-mobile flex-col items-center gap-14 overflow-y-hidden px-8 pb-16 tablet:flex-row  laptop:max-w-screen-laptop laptop:p-0">
+    <section className="isolate flex w-full max-w-screen-mobile flex-col items-center gap-14 overflow-y-hidden px-8 pb-16 tablet:flex-row  laptop:max-w-screen-laptop laptop:px-0">
       <div
         aria-hidden
         className="relative grid grow basis-1/2 place-items-center laptop:max-w-[50%]"
