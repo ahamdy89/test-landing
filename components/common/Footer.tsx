@@ -66,7 +66,13 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <Image className="w-20" src={appleStoreBlack} alt="App Store" />
+              <div className="w-[80px]">
+                <Image
+                  className="w-full"
+                  src={appleStoreBlack}
+                  alt="App Store"
+                />
+              </div>
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.axispay.consumer.wallet"
@@ -90,51 +96,51 @@ export default function Footer() {
 
           {/* Tablet & Mobile: Follow Us Section Second */}
           <div className="order-2 flex items-center gap-4 tablet:order-2">
-            <p>Follow us!</p>
+            <p className="pt-2">Follow us!</p>
             <div className="flex items-center gap-2">
               <a
                 href={process.env.NEXT_PUBLIC_LINKEDIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-6 w-6"
+                
               >
                 <Image
                   src={linkedInIcon}
                   alt="LinkedIn"
-                  className="h-full w-full"
+                  className="h-6 w-6"
                 />
               </a>
               <a
                 href={process.env.NEXT_PUBLIC_FACEBOOK_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-6 w-6"
+                
               >
                 <Image
                   src={facebookIcon}
                   alt="Facebook"
-                  className="h-full w-full"
+                  className="h-6 w-6"
                 />
               </a>
               <a
                 href={process.env.NEXT_PUBLIC_INSTAGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-6 w-6"
+                
               >
                 <Image
                   src={instagramIcon}
                   alt="Instagram"
-                  className="h-full w-full"
+                  className="h-6 w-6"
                 />
               </a>
               <a
                 href={process.env.NEXT_PUBLIC_TWITTER_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-6 w-6"
+                
               >
-                <Image src={xIcon} alt="Twitter" className="h-full w-full" />
+                <Image src={xIcon} alt="Twitter" className="h-6 w-6"/>
               </a>
             </div>
           </div>

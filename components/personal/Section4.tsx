@@ -6,7 +6,7 @@ export default function Section4() {
   const { t } = useTranslation(["personal", "common"]);
 
   return (
-    <section className="flex w-full max-w-screen-mobile flex-col-reverse items-center gap-14 px-8 pt-16 tablet:flex tablet:flex-row-reverse laptop:max-w-screen-laptop laptop:flex-row-reverse laptop:justify-center laptop:p-0">
+    <section className="flex w-full max-w-screen-mobile flex-col-reverse items-center gap-14 px-8 pt-16 tablet:flex tablet:flex-row-reverse laptop:max-w-screen-laptop laptop:flex-row-reverse laptop:justify-center laptop:px-0 laptop:pt-12">
       <div className="flex basis-1/2 flex-col gap-3 text-center align-middle tablet:text-start">
         <h2 className="text-[40px] font-semibold leading-[44px] tablet:font-medium">
           <Trans t={t} i18nKey="personal:SECTION_4_HEADING" />
@@ -21,7 +21,7 @@ export default function Section4() {
           src={picSection4URL}
           placeholder="blur"
           alt=""
-          className="h-full w-full laptop:h-[620px] laptop:w-[85%]"
+          className="h-full w-full"
         />
       </div>
     </section>
