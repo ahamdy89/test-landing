@@ -1,7 +1,4 @@
 import Image from "next/image";
-import PLayIcon from "../common/PlayIcon";
-// import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
-// import Link from "next/link";
 
 interface Props {
   openVideoModal: () => void;
@@ -40,7 +37,6 @@ const Section2 = ({ openVideoModal, setVideoUrl, videos, locale }: Props) => {
             >
               <div className="relative flex h-[333px] flex-col rounded-[20px] shadow-xl">
                 <span className="absolute rounded-md bg-black/50 p-2 text-sm text-white [inset-block-start:1rem] [inset-inline-end:1rem] rtl:flex-row-reverse">
-                  <PLayIcon />
                 </span>
                 <div className="-z-10 flex h-2/3 justify-center rounded-t-[20px] bg-[#E3F6F2]">
                   <div className="relative w-full">
