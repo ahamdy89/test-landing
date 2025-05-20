@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import starIcon from "../../public/images/common/star-icon.png";
 import { useState } from "react";
-import ShowVideoModal from "../common/ShowVideoModal";
+import HowToVideoModal from "../how-to/HowToVideoModal";
 import {
   Carousel,
   CarouselContent,
@@ -182,6 +182,11 @@ export default function Section7({ videos }: Section7Props) {
           video={selectedVideo}
         />
       )}
+      <HowToVideoModal
+        isOpen={isVideoOpen}
+        close={closeVideo}
+        video={selectedVideo}
+      />
     </section>
   );
 }
