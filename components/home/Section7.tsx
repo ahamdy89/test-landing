@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import starIcon from "../../public/images/common/star-icon.png";
 import { useState } from "react";
-import HowToVideoModal from "../how-to/HowToVideoModal";
+import ShowVideoModal from "../common/ShowVideoModal";
 import {
   Carousel,
   CarouselContent,
@@ -173,7 +173,7 @@ export default function Section7({ videos }: Section7Props) {
         </Carousel>
       </div>
 
-      <HowToVideoModal
+      <ShowVideoModal
         isOpen={isVideoOpen}
         close={closeVideo}
         video={selectedVideo}
