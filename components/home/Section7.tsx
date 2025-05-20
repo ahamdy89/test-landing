@@ -175,13 +175,6 @@ export default function Section7({ videos }: Section7Props) {
         </Carousel>
       </div>
 
-      {selectedVideo && (
-        <ShowVideoModal
-          isOpen={isVideoOpen}
-          close={closeVideo}
-          video={selectedVideo}
-        />
-      )}
       <HowToVideoModal
         isOpen={isVideoOpen}
         close={closeVideo}
