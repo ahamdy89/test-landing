@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 import { Trans, useTranslation } from "next-i18next";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import Logo from "./Logo";
-import HamburgerIcon from "../../lib/HamburgerIcon";
 
 interface Props {
   allowChangeLocale?: boolean;

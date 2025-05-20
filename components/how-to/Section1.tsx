@@ -1,5 +1,5 @@
 import Image from "next/image";
-import section1Image from "../../public/images/how-to/images/section1Image.png";
+// import section1Image from "../../public/images/how-to/images/section1Image.png";
 import { Trans, useTranslation } from "next-i18next";
 
 const Section1 = () => {
@@ -25,12 +25,12 @@ const Section1 = () => {
             </p>
           </div>
         </div>
-        <Image
+        {/* <Image
           className="hidden w-1/4 shrink-0  rtl:scale-x-[-1] laptop:block"
           src={section1Image}
           sizes="100vw"
           alt="how-to-header-image"
-        />
+        /> */}
       </div>
     </div>
   );
