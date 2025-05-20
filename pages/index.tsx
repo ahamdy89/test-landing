@@ -3,20 +3,17 @@ import type { InferGetServerSidePropsType, NextPage } from "next";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import type { StaticImageData } from "next/image";
-import { useRouter } from "next/router";
-import { useState } from "react";
 import Metadata from "../components/common/Metadata";
-import HowToVideoModal from "../components/how-to/HowToVideoModal";
-import Section1 from "../components/personal/Section1";
-import Section10 from "../components/personal/Section10";
-import Section2 from "../components/personal/Section2";
-import Section3 from "../components/personal/Section3";
-import Section4 from "../components/personal/Section4";
-import Section5 from "../components/personal/Section5";
-import Section6 from "../components/personal/Section6";
-import Section7 from "../components/personal/Section7";
-import Section8 from "../components/personal/Section8";
-import Section9 from "../components/personal/Section9";
+import Section1 from "../components/home/Section1";
+import Section10 from "../components/home/Section10";
+import Section2 from "../components/home/Section2";
+import Section3 from "../components/home/Section3";
+import Section4 from "../components/home/Section4";
+import Section5 from "../components/home/Section5";
+import Section6 from "../components/home/Section6";
+import Section7 from "../components/home/Section7";
+import Section8 from "../components/home/Section8";
+import Section9 from "../components/home/Section9";
 import socialMediaImageAR from "../public/images/common/social-media-image-ar.jpg";
 import socialMediaImageEn from "../public/images/common/social-media-image-en.jpg";
 
@@ -56,28 +53,6 @@ async function getServerSideProps({ locale = "en" }) {
 type Props = InferGetServerSidePropsType<typeof getServerSideProps>;
 const Personal: NextPage<Props> = ({ locale, videos }) => {
   const { t } = useTranslation("personal");
-
-  const router = useRouter();
-  const isGetStartedModalOpen = router.query["get-started"] != undefined;
-  const openGetStartedModal = () => {
-    const newQuery = { ...router.query, ["get-started"]: "" };
-    router.replace({ query: newQuery }, undefined, { shallow: true });
-  };
-  const closeGetStartedModal = () => {
-    const { ["get-started"]: _, ...newQuery } = router.query;
-    router.replace({ query: newQuery }, undefined, { shallow: true });
-  };
-
-  const [videoUrl, setVideoUrl] = useState("");
-  const isVideoOpen = router.query["video"] != undefined;
-  const openVideoModal = () => {
-    const newQuery = { ...router.query, ["video"]: "" };
-    router.replace({ query: newQuery }, undefined, { shallow: true });
-  };
-  const closeVideoModal = () => {
-    const { ["video"]: _, ...newQuery } = router.query;
-    router.replace({ query: newQuery }, undefined, { shallow: true });
-  };
   return (
     <>
       <Metadata
@@ -93,22 +68,12 @@ const Personal: NextPage<Props> = ({ locale, videos }) => {
         }}
         twitterCardType="summary"
       />
-      <HowToVideoModal
-        isOpen={isVideoOpen}
-        close={closeVideoModal}
-        video={videoUrl}
-      />
       <Section1 />
       <Section2 />
-      <Section3
-        openGetStartedModal={openGetStartedModal}
-        openVideoModal={openVideoModal}
-        setVideoUrl={setVideoUrl}
-        locale={locale}
-      />
+      <Section3 />
       <Section4 />
       <Section5 />
-      <Section6 openGetStartedModal={openGetStartedModal} />
+      <Section6 />
       <Section7 videos={videos} />
       <Section8 />
       <Section9 />

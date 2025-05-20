@@ -5,43 +5,4 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://axisapp/about</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>https://axisapp/blog</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>https://www.axisapp.com/personal</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>https://www.axisapp.com/join-us</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>https://www.axisapp.com/jobs-board</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>https://www.axisapp.com/how-to</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>https://www.axisapp.com/faq</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>https://www.axisapp.com/contact-us</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1</priority>
-  </url>
 </urlset>
