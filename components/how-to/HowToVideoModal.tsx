@@ -6,7 +6,6 @@ interface Props {
   video: string;
 }
 export default function HowToVideoModal({ isOpen, close, video }: Props) {
-  console.log(video);
   return (
     <>
       <Dialog.Root
