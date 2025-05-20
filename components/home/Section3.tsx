@@ -16,7 +16,9 @@ export default function Section3() {
             <p className="text-[34px] font-semibold">
               EGP <span className="text-5xl">6M+</span>
             </p>
-            <p className="text-xl font-semibold">Monthly Processed transactions</p>
+            <p className="text-xl font-semibold">
+              Monthly Processed transactions
+            </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-2">
             <p className="text-[34px] font-semibold">

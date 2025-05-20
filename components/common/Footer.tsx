@@ -71,6 +71,8 @@ export default function Footer() {
                   className="w-full"
                   src={appleStoreBlack}
                   alt="App Store"
+                  placeholder="blur"
+                  blurDataURL="/images/placeholder.png"
                 />
               </div>
             </a>
@@ -79,7 +81,13 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <Image className="w-20" src={googlePlayBlack} alt="Google Play" />
+              <Image
+                className="w-20"
+                src={googlePlayBlack}
+                alt="Google Play"
+                placeholder="blur"
+                blurDataURL="/images/placeholder.png"
+              />
             </a>
             <a
               href="https://appgallery.huawei.com/app/C109465235"
@@ -90,6 +98,8 @@ export default function Footer() {
                 className="w-20"
                 src={huaweiStoreBlack}
                 alt="Huawei Store"
+                placeholder="blur"
+                blurDataURL="/images/placeholder.png"
               />
             </a>
           </div>
@@ -102,45 +112,53 @@ export default function Footer() {
                 href={process.env.NEXT_PUBLIC_LINKEDIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                
               >
                 <Image
                   src={linkedInIcon}
                   alt="LinkedIn"
                   className="h-6 w-6"
+                  placeholder="blur"
+                  blurDataURL="/images/placeholder.png"
                 />
               </a>
               <a
                 href={process.env.NEXT_PUBLIC_FACEBOOK_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                
               >
                 <Image
                   src={facebookIcon}
                   alt="Facebook"
                   className="h-6 w-6"
+                  placeholder="blur"
+                  blurDataURL="/images/placeholder.png"
                 />
               </a>
               <a
                 href={process.env.NEXT_PUBLIC_INSTAGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                
               >
                 <Image
                   src={instagramIcon}
                   alt="Instagram"
                   className="h-6 w-6"
+                  placeholder="blur"
+                  blurDataURL="/images/placeholder.png"
                 />
               </a>
               <a
                 href={process.env.NEXT_PUBLIC_TWITTER_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                
               >
-                <Image src={xIcon} alt="Twitter" className="h-6 w-6"/>
+                <Image
+                  src={xIcon}
+                  alt="Twitter"
+                  className="h-6 w-6"
+                  placeholder="blur"
+                  blurDataURL="/images/placeholder.png"
+                />
               </a>
             </div>
           </div>

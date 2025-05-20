@@ -9,24 +9,23 @@ import bosta from "../../public/images/partners/bosta.webp";
 
 export default function Section2() {
   return (
-    <section className="max-w-screen-mobile flex w-full flex-col items-center gap-14 py-10">
+    <section className="flex w-full max-w-screen-mobile flex-col items-center gap-14 py-10">
       <div className={styles.logosContainer}>
         <Image
-        priority
+          priority
           className={`${styles.logo} ${styles.logo1}`}
           aria-hidden
           src={gracias}
-          alt=""
+          alt="gracias"
           placeholder="blur"
           blurDataURL="/images/placeholder.png"
         />
         <Image
-        priority
-
+          priority
           className={`${styles.logo} ${styles.logo2}`}
           aria-hidden
           src={kenzz}
-          alt=""
+          alt="kenzz"
           placeholder="blur"
           blurDataURL="/images/placeholder.png"
         />
@@ -34,26 +33,23 @@ export default function Section2() {
           className={`${styles.logo} ${styles.logo3}`}
           aria-hidden
           src={cartona}
-          alt=""
+          alt="cartona"
           placeholder="blur"
           blurDataURL="/images/placeholder.png"
-
-
         />
         <Image
           className={`${styles.logo} ${styles.logo4}`}
           aria-hidden
           src={talabat}
-          alt=""
+          alt="talabat"
           placeholder="blur"
           blurDataURL="/images/placeholder.png"
-
         />
         <Image
           className={`${styles.logo} ${styles.logo5}`}
           aria-hidden
           src={khazenly}
-          alt=""
+          alt="khazenly"
           placeholder="blur"
           blurDataURL="/images/placeholder.png"
         />
@@ -61,7 +57,7 @@ export default function Section2() {
           className={`${styles.logo} ${styles.logo6}`}
           aria-hidden
           src={bosta}
-          alt=""
+          alt="bosta"
           placeholder="blur"
           blurDataURL="/images/placeholder.png"
         />

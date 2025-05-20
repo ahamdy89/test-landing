@@ -16,7 +16,8 @@ export default function Section6() {
           className="col-span-full row-span-full"
           sizes="100vw"
           placeholder="blur"
-          alt=""
+          blurDataURL="/images/placeholder.png"
+          alt="axis-img-section-six"
         />
       </div>
       <div className="flex grow basis-1/2 flex-col items-start gap-3 text-center tablet:text-start laptop:max-w-[50%] laptop:text-start">

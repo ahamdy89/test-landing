@@ -20,7 +20,8 @@ export default function Section4() {
           aria-hidden
           src={picSection4URL}
           placeholder="blur"
-          alt=""
+          blurDataURL="/images/placeholder.png"
+          alt="axis-img-section-four"
           className="h-full w-full"
         />
       </div>
