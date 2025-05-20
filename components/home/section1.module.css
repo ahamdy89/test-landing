@@ -50,10 +50,10 @@
 .maskedCard {
   -webkit-mask-image: radial-gradient(
     circle at 50% 50%,
-    transparent 20px,
-    black 21px
+    transparent 26px,
+    black 27px
   );
-  mask-image: radial-gradient(circle at 50% 50%, transparent 20px, black 21px);
+  mask-image: radial-gradient(circle at 50% 50%, transparent 26px, black 27px);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   margin-top: 1.5rem;

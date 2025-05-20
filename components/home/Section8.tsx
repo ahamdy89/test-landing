@@ -1,5 +1,4 @@
 export default function Section8() {
-
   const cardData = [
     {
       title: "Omnichannel support",
@@ -21,7 +20,7 @@ export default function Section8() {
   return (
     <section className="w-full">
       <div className="px-9 pt-12 text-center text-black tablet:px-20 laptop:px-52">
-        <h2 className="text-[40px] font-semibold ">
+        <h2 className="text-[40px] font-semibold leading-[44px] tablet:leading-none laptop:leading-none">
           More than just financial management
         </h2>
         <p className="mx-auto max-w-3xl pt-8 text-[20px] font-normal">
